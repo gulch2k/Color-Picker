@@ -28,6 +28,11 @@ const App = () => {
         <Color color="violet" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
         <Color color ="red" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
         <Color color="black" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
+        <Color color="blue" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
+        <Color color ="orange" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
+        <Color color="yellow" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
+        <Color color="green" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>"
+        <Color color="white" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>"
       </div>
     </div>
   </div>
