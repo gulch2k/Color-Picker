@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './index.css';
 
+// Color component
 const Color = ({ color, setSelectedColor, selectedColor }) => {
   return (
     <div
@@ -11,7 +12,7 @@ const Color = ({ color, setSelectedColor, selectedColor }) => {
 };
 
 
-
+// App component
 const App = () => {
 
   const [selectedColor, setSelectedColor] = useState("")
@@ -21,10 +22,12 @@ const App = () => {
     <div id="app">
     <div id="container">
       <div id="navbar">
+         {/* Display the currently selected color */}
         <div>Currently selected: </div>
         <div className={selectedColor}>{selectedColor}</div>
       </div>
       <div id="colors-list">
+        {/* Render Color components with different colors */}
         <Color color="violet" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
         <Color color ="red" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
         <Color color="black" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
@@ -32,7 +35,7 @@ const App = () => {
         <Color color ="orange" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
         <Color color="yellow" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
         <Color color="green" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>"
-        <Color color="white" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>"
+        <Color color="purple" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>"
       </div>
     </div>
   </div>
